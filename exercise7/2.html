@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Lovely Pets</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f2f2f2, #d1f0f7);
+            color: #222;
+        }
+
+        header {
+            text-align: center;
+            padding: 25px;
+            background-color: #ffffffcc;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .rainbow-title {
+            font-size: 34px;
+            font-weight: 700;
+            background: linear-gradient(90deg, crimson, gold, limegreen, dodgerblue, violet);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .description {
+            columns: 2;
+            column-gap: 40px;
+            line-height: 1.8;
+            padding: 30px;
+            margin: 20px;
+            background-color: #ffffffdd;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .play-area {
+            text-align: center;
+            padding: 30px;
+            background-color: #ffffffdd;
+            margin: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #ball {
+            animation: bounceSpin 4s infinite ease-in-out;
+        }
+
+        @keyframes bounceSpin {
+            0%   { transform: translate(0, 0) rotate(0deg); }
+            25%  { transform: translate(80px, -40px) rotate(90deg); }
+            50%  { transform: translate(160px, 0) rotate(180deg); }
+            75%  { transform: translate(80px, 40px) rotate(270deg); }
+            100% { transform: translate(0, 0) rotate(360deg); }
+        }
+
+        footer {
+            text-align: center;
+            padding: 12px;
+            background-color: #333;
+            color: #eee;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="rainbow-title">Explore the World of Pets</h1>
+    </header>
+
+    <section>
+        <h2 style="text-align:center;">Why We Love Pets</h2>
+        <div class="description">
+            <p>Pets are more than animals – they’re loyal companions and a true source of joy. Whether you prefer a playful puppy or a calm kitten, each pet brings its own spark to your life.</p>
+            <p>From chirping birds to curious hamsters, pets teach us responsibility, love, and patience. Their presence brings comfort and their loyalty creates unbreakable bonds.</p>
+        </div>
+    </section>
+
+    <section class="play-area">
+        <h2>Let's Play!</h2>
+        <svg id="ball" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="40" fill="orange" stroke="black" stroke-width="3"/>
+        </svg>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Lovely Pets | Created with ❤️</p>
+    </footer>
+
+</body>
+</html>
